@@ -1,7 +1,7 @@
 module.exports = {
     entry: "./src/classes/Game.ts",
     output: {
-        filename: "./dist/bundle.js",
+        filename: "./bundle.js",
     },
 
     devtool: "source-map",
