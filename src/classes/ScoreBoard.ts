@@ -1,10 +1,11 @@
-interface ScoreInterface {
+export interface ScoreInterface {
     output: Element;
-    score: number; //public; you pass this in to me
-    getScore(): number;//public, you get to use this
+    score: number;
+    getScore(): number;
     setScore(points: number): number;
+    init():void;
 }
-class ScoreBoard implements ScoreInterface {
+export class ScoreBoard implements ScoreInterface {
     output: Element;
     score: number;
     constructor(s: number){
@@ -48,5 +49,4 @@ class ScoreBoard implements ScoreInterface {
     }
 }
 
-const x = new ScoreBoard(0);
-x.init();
+// export = ScoreBoard;
